@@ -9,11 +9,11 @@ const the_address = (process.argv[2]);
 if (!the_address) {
     log('There is no any adress to connect...')
 } else {
-    _geo(the_address, (error, data) => {
+    _geo(the_address, (error, { latitude, longitude }) => {
         if (error) {
             return log(error)
         }
-        show_forecast(data.latitude, data.longitude, (error, forecast_Data) => {
+        show_forecast(latitude, longitude, (error, forecast_Data) => {
             if (error) {
                 return log(error)
             }
