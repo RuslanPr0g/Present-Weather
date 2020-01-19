@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Present Weather</title>
     <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="icon" href="/img/favicon.ico">
 </head>
 <body>
-    {{>header}}
-    <p>Our service provide {{name}}</p>
-    
+    <div class="container">
+        {{>header}}
+        <p>Our service provide {{name}}</p>
+        <img src="/img/icon.png" width="70px">
+    </div>
+
     {{>footer}}
 </body>
 </html>
