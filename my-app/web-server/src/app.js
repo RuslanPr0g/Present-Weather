@@ -7,7 +7,7 @@ const main_path = path.join(__dirname, '../public')
 const app = express()
 
 //  Define paths for express config
-const __host = 3001
+const __host = (process.argv[2]); // chose the host
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 
