@@ -49,16 +49,14 @@ app.get('/weather', (req, res) => {
         })
     }
 
-    _geo(req.query.address, (error, { latitude, longitude, location }) => {
+    _geo(req.query.address, (error, { latitude, longitude, location }={}) => {
         if(error){
             return res.send({ error })
         }
-    
         show_forecast(latitude, longitude, (error, fdata) => {
             if(error){
                 return res.send({ error })
             }
-
             res.send({
                 forecast: fdata,
                 location,
