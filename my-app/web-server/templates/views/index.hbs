@@ -11,11 +11,15 @@
 <body>
     <div class="container">
       {{>header}}
-      <p>Our service provide {{name}}</p>
+      <p class="title-head">Our service provide {{name}}</p>
+
+      <form action="">
+        <p class="search_h">Find Your City And Monitor It In The Real Time!</p> <br>
+        <input type="text" class="s-input">
+        <button>Search</button>
+      </form>
     </div>
     {{>footer}}
     <script src="js/app.js"></script>
 </body>
 </html>
-
-{{!-- "-e" --}}
