@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Present Weather</title>
-    <link rel="stylesheet" href="css/style.css"></link>
-    <link rel="icon" href="/img/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Present Weather</title>
+  <link rel="stylesheet" href="css/style.css">
+  </link>
+  <link rel="icon" href="/img/favicon.ico">
 </head>
+<video autoplay muted loop class="bg_video">
+  <source src="/img/background_video.mp4" type="video/mp4">
+
+</video>
+
 <body>
-    <div class="container">
-      {{>header}}
-      <p class="title-head">Our service provide {{name}}</p>
 
-      <form action="">
-        <p class="search_h">Find Your City And Monitor It In The Real Time!</p> <br>
-        <input type="text" class="s-input">
-        <button>Search</button>
-      </form>
 
-      <div class="content">
-        <p id="_message1"></p>
-        <p id="_message2"></p>
-      </div>
+  {{>header}}
+  {{!-- <p class="title-head">Our service provide {{name}}</p> --}}
+  <div class="container">
+    <form action="">
+      <p class="container__search-message">Just enter your city!</p>
+      <input type="text" class="container__input">
+      <button class="container__button">Search</button>
+    </form>
 
-      
+    <div class="container__content">
+      <p id="_message1"></p>
+      <p id="_message2"></p>
     </div>
-    {{>footer}}
-    <script src="js/app.js"></script>
+
+
+  </div>
+  {{>footer}}
+  <script src="js/app.js"></script>
 </body>
+
 </html>

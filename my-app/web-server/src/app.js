@@ -37,7 +37,7 @@ app.get('/help', (req, res) => {
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Present Weather',
+        title: 'Find the weather all over the world',
         name: 'Present relevant forecast in your city!'
     })
 })
