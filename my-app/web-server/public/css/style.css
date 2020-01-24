@@ -33,6 +33,8 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 543px;
+    margin: 0 auto;
 }
 
 .search_h {
@@ -93,6 +95,14 @@ header a {
     color: white;
     border-radius: 1px;
 }
+
+/* CONTENT-STYLE */
+
+.content {
+    width: 100%;
+}
+
+/* **************** */
 
 /* REMOVE SELECTION */
 h1::selection{
