@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.16.4",
-    "hbs": "^4.1.0"
+    "hbs": "^4.1.0",
+    "request": "^2.88.0"
   }
 }
