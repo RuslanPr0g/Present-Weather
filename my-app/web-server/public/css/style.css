@@ -13,13 +13,13 @@ body {
   height: 100%;
 }
 
-.about-body {
+#a-body {
   background-image: url("../img/sun_rise.png");
   background-repeat: no-repeat;
   background-color: #321102;
 }
 
-.help-body {
+#h-body {
   background-image: url("../img/sun_set.png") ;
   height: 100%;
   background-repeat: no-repeat;
@@ -51,13 +51,26 @@ body {
   transition: 0.3s;
 }
 
+/*UNDERLINE-CURRENT-PAGE*/
+#i-body .header #index-body {
+  border-bottom: 1px solid #4caf50;
+}
+#h-body .header #help-body {
+  border-bottom: 1px solid #4caf50;
+}
+#a-body .header #about-body {
+  border-bottom: 1px solid #4caf50;
+}
+/**/
+
 .header a:hover {
   border-bottom: 1px solid #4caf50;
 }
 
-.header #us {
+.u-line {
   color: #4caf50;
 }
+
 
 /* FOOTER */
 
