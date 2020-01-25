@@ -40,7 +40,7 @@ body {
   color: #fff;
 
   animation-name: moveInRight;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
 }
 
 .header a {
@@ -131,7 +131,7 @@ body {
   text-align: center;
 
   animation-name: moveInLeft;
-  animation-duration: 2s;
+  animation-duration: 1.4s;
 }
 
 .container__input {
@@ -144,7 +144,7 @@ body {
   border: 2px solid rgb(126, 126, 126);
 
   animation-name: moveInUp;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 

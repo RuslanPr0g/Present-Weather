@@ -4,7 +4,7 @@ const request = require('request');
 
 const to_geo = (the_address, callback) => {
     const geocoding_url= 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + the_address + '.json?access_token=pk.eyJ1IjoicnVzbGFucHJvZyIsImEiOiJjazU5cjlpNWowb2IyM2RyZnJqM2dyNzdqIn0.ozdJTwPL2kb8cLFHA53JTw&limit=1';
-    request({ url: geocoding_url, json: true }, (error, { body }={}) => {
+    request({ url: geocoding_url, json: true }, (error, { body = {} }) => {
         if (error) {
             callback('Server is not respond...', undefined)
         } else if (body.features.length === 0) {
