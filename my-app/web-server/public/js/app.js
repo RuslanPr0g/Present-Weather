@@ -6,7 +6,7 @@ const message1 = document.querySelector('#_message1');
 const message2 = document.querySelector('#_message2');
 
 //message1.textContent = 'Your Weather Right Now:'
-//  message2.textContent = ''
+//message2.textContent = ''
 
 w_Form.addEventListener('submit', (event) => {
   event.preventDefault(); //stop refresh page
@@ -19,6 +19,7 @@ w_Form.addEventListener('submit', (event) => {
         if (data.error) {
           console.log(data.error);
           message2.textContent = data.error;
+          message1.textContent = ' ';
         } else {
           message1.textContent = data.location;
           message2.textContent = data.forecast;
@@ -27,3 +28,4 @@ w_Form.addEventListener('submit', (event) => {
     }
   );
 });
+

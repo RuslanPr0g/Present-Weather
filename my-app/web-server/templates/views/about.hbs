@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Present Weather</title>
-    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="/img/favicon.ico">
 </head>
-<body>
+<body class="about-body">
     <div class="container">
         {{>header}}
-        <p>Our service provide {{name}}</p>
+        
+    </div>
+    <div class="container__content">
+      <p>Our service provide {{name}}</p>
         <img src="/img/icon.png" width="70px">
     </div>
-
     {{>footer}}
 </body>
 </html>

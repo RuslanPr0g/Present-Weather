@@ -24,7 +24,7 @@ app.use(express.static(main_path))
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Present Weather',
-        name: 'forecast'
+        name: 'real time forecast'
     })
 })
 
@@ -37,8 +37,8 @@ app.get('/help', (req, res) => {
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Find the weather all over the world',
-        name: 'Present relevant forecast in your city!'
+        title: 'Real Time Weather',
+        name: 'Just type into it!'
     })
 })
 
@@ -64,12 +64,6 @@ app.get('/weather', (req, res) => {
             })
         })
     })
-
-
-    // res.send([{
-    //     forecast: ,
-    //     location: req.query.address,
-    // }])
 })
 
 app.get('/products', (req, res) => {
