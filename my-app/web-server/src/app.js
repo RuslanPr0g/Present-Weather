@@ -9,7 +9,9 @@ const _geo = require('./append/geocode')
 const show_forecast = require('./append/show_forecast')
 
 //  Define paths for express config
-const __host = (process.argv[2]); // chose the host
+
+//const __host = (process.argv[2]); // chose the host
+const port = process.env.PORT || 3000;
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 
@@ -91,8 +93,8 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(__host, () => {
-    log('Server is up on ' + __host)
+app.listen(port, () => {
+    log('Server is up on ' + port)
 })
 
 
