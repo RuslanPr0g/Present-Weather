@@ -7,22 +7,27 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #1A3940;
+  background-color: #1a3940;
   overflow: hidden; /* Hide scrollbars */
   /* height: 1270px; */
   height: 100%;
 }
 
 #a-body {
-  background-image: url("../img/sun_rise.png");
+  height: 100vh;
+  background-image: url('../img/sun_rise.png');
+  background-position: center; /* Center the image */
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: #321102;
 }
 
 #h-body {
-  background-image: url("../img/sun_set.png") ;
-  height: 100%;
+  height: 100vh;
+  background-image: url('../img/sun_set.png');
+  background-position: center; /* Center the image */
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: #333146;
 }
 
@@ -71,7 +76,6 @@ body {
   color: #4caf50;
 }
 
-
 /* FOOTER */
 
 /* *** */
@@ -113,7 +117,7 @@ body {
 }
 
 .container__content {
-  background:rgba(34,34,34,0.4);
+  background: rgba(34, 34, 34, 0.4);
   border-radius: 5px;
   padding: 7px;
 }
@@ -147,8 +151,6 @@ body {
   animation-duration: 1.5s;
 }
 
-
-
 .container__button {
   display: block;
   margin: 0 auto;
@@ -158,22 +160,19 @@ body {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  
+
   font-size: 16px;
 }
 
 .container__content {
-    display: block;
-    margin: 40px auto;
-    width: 800px;
-    letter-spacing: 2px;
+  display: block;
+  margin: 40px auto;
+  width: 800px;
+  letter-spacing: 2px;
 
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-
-
-
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
 .header,
@@ -191,4 +190,3 @@ body {
   height: 100%;
   pointer-events: none;
 }
-
