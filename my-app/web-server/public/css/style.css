@@ -35,7 +35,6 @@ body {
   display: block;
   margin: auto;
 
-  width: 1100px;
   margin-top: 60px;
   text-align: center;
   font-size: 25px;
@@ -173,6 +172,9 @@ body {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  width: 500px;
+  text-align: center;
+  border: 5px solid  rgba(126, 126, 126, 0.1);;
 }
 
 .header,
