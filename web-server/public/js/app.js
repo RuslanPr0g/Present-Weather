@@ -8,10 +8,15 @@ const message2 = document.querySelector('#_message2');
 //message1.textContent = 'Your Weather Right Now:'
 //message2.textContent = ''
 
+function viewDiv(){
+  document.getElementById("container-content-id").style.display = "block";
+};
+
 w_Form.addEventListener('submit', (event) => {
   event.preventDefault(); //stop refresh page
 
   const location = search.value;
+  const ul = document.querySelector("ul");
 
   fetch('/weather?address=' + location).then(
     (response) => {
@@ -23,9 +28,11 @@ w_Form.addEventListener('submit', (event) => {
         } else {
           message1.textContent = data.location;
           message2.textContent = data.forecast;
+          viewDiv();
         }
       });
     }
   );
+
 });
 

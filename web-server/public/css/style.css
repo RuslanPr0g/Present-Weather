@@ -115,12 +115,6 @@ body {
   }
 }
 
-.container__content {
-
-  background: rgba(34, 34, 34, 0.4);
-  border-radius: 5px;
-}
-
 .container__search-message {
   display: block;
   margin: 10px auto;
@@ -168,6 +162,8 @@ body {
   margin: 10px auto;
 
   letter-spacing: 2px;
+  background: rgba(34, 34, 34, 0.4);
+  border-radius: 5px;
 
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -175,6 +171,10 @@ body {
   width: 80%;
   text-align: center;
   border: 5px solid rgba(126, 126, 126, 0.1);
+}
+
+#container-content-id {
+  display: none;
 }
 
 .header,
