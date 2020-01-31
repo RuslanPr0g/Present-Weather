@@ -11,6 +11,9 @@ const message2 = document.querySelector('#_message2');
 function viewDiv(){
   document.getElementById("container-content-id").style.display = "block";
 };
+function hideDiv(){
+  document.getElementById("container-content-id").style.display = "none";
+};
 
 w_Form.addEventListener('submit', (event) => {
   event.preventDefault(); //stop refresh page
@@ -25,6 +28,10 @@ w_Form.addEventListener('submit', (event) => {
           console.log(data.error);
           message2.textContent = data.error;
           message1.textContent = ' ';
+          setTimeout(()=>
+          {
+            hideDiv();
+          }, 1500)
         } else {
           message1.textContent = data.location;
           message2.textContent = data.forecast;
