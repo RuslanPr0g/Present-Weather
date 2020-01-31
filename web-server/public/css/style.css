@@ -191,30 +191,12 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
-<<<<<<< HEAD
-
 }
 
-@media screen and (max-width: 490px)
-{
-  html {
-    position: relative;
+@media screen and (min-width: 800px) {
+  .container__content {
+    width: 800px;
   }
-  body {
-    width: 100%;
-  }
-}
-
-@media screen and (max-height: 550px)
-{
-  body .header a{
-    margin: 5px;
-  }
-=======
-}
-
-@media screen and (max-width: 480px) {
->>>>>>> e1042f620d7e71ff6a120fff3131e29b17178095
 }
 
 @media screen and (max-height: 700px) {
