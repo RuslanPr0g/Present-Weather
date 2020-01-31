@@ -3,7 +3,7 @@
 /* font-family: 'Noto Sans', sans-serif;  */
 /* font-family: 'Roboto', sans-serif; */
 
-body { 
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -116,16 +116,16 @@ body {
 }
 
 .container__content {
+
   background: rgba(34, 34, 34, 0.4);
   border-radius: 5px;
-  
 }
 
 .container__search-message {
   display: block;
   margin: 10px auto;
 
-  width: 400px;
+  width: auto;
   font-size: 30px;
   font-family: 'Noto Sans', sans-serif;
   font-style: Regular;
@@ -166,15 +166,15 @@ body {
 .container__content {
   display: block;
   margin: 10px auto;
-  width: 800px;
+
   letter-spacing: 2px;
 
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  width: 500px;
+  width: 80%;
   text-align: center;
-  border: 5px solid  rgba(126, 126, 126, 0.1);;
+  border: 5px solid rgba(126, 126, 126, 0.1);
 }
 
 .header,
@@ -191,6 +191,7 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
+<<<<<<< HEAD
 
 }
 
@@ -209,10 +210,14 @@ body {
   body .header a{
     margin: 5px;
   }
+=======
 }
 
-@media screen and (max-height: 700px)
-{
+@media screen and (max-width: 480px) {
+>>>>>>> e1042f620d7e71ff6a120fff3131e29b17178095
+}
+
+@media screen and (max-height: 700px) {
   body {
     overflow: visible;
   }
