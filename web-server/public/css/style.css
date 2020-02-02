@@ -134,6 +134,7 @@ body {
 .container__input {
   display: block;
   margin: 45px auto;
+  margin-bottom: 25px;
   width: 300px;
   height: 30px;
   border-radius: 3px;

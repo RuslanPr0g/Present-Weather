@@ -19,7 +19,7 @@ w_Form.addEventListener('submit', (event) => {
   event.preventDefault(); //stop refresh page
 
   const location = search.value;
-  const ul = document.querySelector("ul");
+  
 
   fetch('/weather?address=' + location).then(
     (response) => {

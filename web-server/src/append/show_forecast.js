@@ -26,7 +26,7 @@ const forecast = (latitude, longitude, callback) => {
                     if(_temperature > 10 && _temperature < 30){_desTemp = ' warm'}
                     if(_temperature > 30){_desTemp = ' too hot'}
                 }
-                callback(undefined, body.daily.data[0].summary + ' It is currently ' + _temperature + _desTemp + ' degrees out. There is a ' + (body.currently.precipProbability * 100) + '% chance of rain.')
+                callback(undefined, body.daily.data[0].summary + ' It is currently ' + _temperature + _desTemp + ' degrees out. There is a ' + (body.currently.precipProbability * 100).toFixed(2) + '% chance of rain.')
         }
     })
 }
