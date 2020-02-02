@@ -3,6 +3,8 @@
 /* font-family: 'Noto Sans', sans-serif;  */
 /* font-family: 'Roboto', sans-serif; */
 
+input {outline: none;}
+
 body {
   margin: 0;
   padding: 0;
@@ -143,6 +145,10 @@ body {
 
   animation-name: moveInUp;
   animation-duration: 1.5s;
+}
+
+.container__input:focus {
+  border: 2px solid #4caf50;
 }
 
 .container__button {
