@@ -15,15 +15,6 @@ body {
   height: 100%;
 }
 
-#a-body {
-  height: 100vh;
-  background-image: url('../img/sun_rise.png');
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #321102;
-}
-
 #h-body {
   height: 100vh;
   background-image: url('../img/sun_set.png');
@@ -169,7 +160,7 @@ body {
   margin: 10px auto;
 
   letter-spacing: 2px;
-  background: rgba(34, 34, 34, 0.4);
+  background: rgba(76, 175, 80, 0.2);
   border-radius: 5px;
 
   color: #fff;
@@ -177,7 +168,7 @@ body {
   font-size: 20px;
   width: 80%;
   text-align: center;
-  border: 5px solid rgba(126, 126, 126, 0.1);
+  border: 5px solid rgba(76, 175, 80, 0.4)
 }
 
 #container-content-id {
